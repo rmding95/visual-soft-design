@@ -37,7 +37,7 @@ How to render the chart on the data:
 ##	API Functions
 
 Listed below are the methods that will allow for customization of a pie chart with data of your choosing.
-<br>
+<br><br>
 
 \# *PieChart*()
 > Constructs a PieChart object
