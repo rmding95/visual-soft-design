@@ -8,34 +8,36 @@ The code enclosed in the main.js file will allow you to create pie charts with d
 
 ## Usage
 
-```javascript
+How to render the chart on the data:
 
-	//	Initial Test Data
-	var data = [
-	{letter: 'U', size: 27},
-	{letter: 'S', size: 44},
-	{letter: 'A', size: 21}	
-	];
+```javascript
 
 	//	Render the PieChart
 	var myChart = PieChart();
 
 	//	Initiate the chart
-	var chartWrapper = d3.select('#myDiv')
-		.datum(data)
+	var chartWrapper = d3.select('#my-div')
+		.datum([dataSet])
 		.call(myChart);
+```
 
-	//	Change the colorRange to red, white, blue
-	myChart.colorRange(['red','white','blue']);
+<br>How to update with new data:
+
+```javascript
+
+	myChart.param1(value);
 
 	//	Re-call myChart function on chartWrapper
-	chartWrapper.call(myChart);
+	chartWrapper.datum([dataSet]).call(myChart);
 
 ```
 
 ***
 
 ##	API Functions
+
+Listed below are the methods that will allow for customization of a pie chart with data of your choosing.
+<br>
 
 \# *PieChart*()
 > Constructs a PieChart object
